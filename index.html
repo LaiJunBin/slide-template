@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>slide title</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<script src="./dist/sweetalert.js"></script>
+</head>
+
+<body style="height: 100% !important">
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown="./docs/first.md" data-separator-vertical="----"></section>
+			<section data-markdown="./docs/second.md" data-separator-vertical="----"></section>
+			<section>
+				<section>
+					this page using html document
+				</section>
+				<section>
+					me too. but try press "esc" and drag the mouse
+				</section>
+				
+			</section>
+		</div>
+	</div>
+
+	<div id="context-menu">
+		<div class="run-btn" id="run-js-btn">Run with JS!</div>
+		<div class="run-btn" id="run-php-btn">Run with PHP!</div>
+	</div>
+
+	<div id="loading">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+
+	<div id="html-playground" data-open="false">
+		<div class="header">Editor</div>
+		<main>
+			<div class="editor"></div>
+			<div id="html-viewer">
+			</div>
+		</main>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="./assets/js/console.js"></script>
+	<script src="./assets/js/main.js"></script>
+
+	<script src="vendor/emmet/emmet-snippets.js"></script>
+	<script src="vendor/emmet/emmet-monaco.js"></script>
+
+	<script defer src="vendor/monaco-editor/dev/vs/loader.js"></script>
+	<script src="./assets/js/html-playground.js"></script>
+	<script type="module" src="./assets/js/html-playground.module.js"></script>
+
+</body>
+
+</html>

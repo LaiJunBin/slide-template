@@ -1,0 +1,165 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+img {
+    user-select: none;
+}
+
+.overview {
+    user-select: none;
+    cursor: grab;
+}
+
+.overview:active {
+    cursor: grabbing;
+}
+
+.column table {
+    border-collapse: collapse;
+}
+
+.column td {
+    border: 1px solid #ddd !important;
+    vertical-align: middle;
+    text-align: center !important;
+}
+
+.column>* {
+    width: 100%;
+}
+
+.reveal {
+    font-size: 30px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+.slide-outline {
+    outline: 10px solid #252525;
+    outline-offset: 10px;
+    display: block !important;
+}
+
+#context-menu {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    border: 1px solid #333;
+}
+
+.run-btn {
+    color: #fff;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #151515;
+    transition: .25s;
+}
+
+.run-btn:hover {
+    background-color: #333;
+}
+
+#loading {
+
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #4444;
+}
+
+#loading>.box {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #39f;
+
+    animation: loading 1s infinite alternate;
+}
+
+#loading>.box:nth-child(1) {
+    animation-delay: -.6s;
+}
+
+#loading>.box:nth-child(2) {
+    animation-delay: -.3s;
+}
+
+@keyframes loading {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#html-playground {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+
+    visibility: hidden;
+    height: 100vh;
+
+}
+
+#html-playground>.header {
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: arial;
+    height: 25px;
+    background-color: #252525;
+    border: 1px solid #333;
+    color: #fff;
+    line-height: 25px;
+}
+
+#html-playground>main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#html-playground>main>div {
+    flex: 1;
+}
+
+#html-viewer {
+    background-color: #fff;
+}
